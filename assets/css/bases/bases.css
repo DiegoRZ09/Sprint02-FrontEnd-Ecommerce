@@ -1,0 +1,13 @@
+.container{
+    padding: 1rem 10%;
+}
+
+.titulos{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.textos{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 1rem;
+}

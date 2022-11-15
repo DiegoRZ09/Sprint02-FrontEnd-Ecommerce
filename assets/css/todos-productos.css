@@ -1,0 +1,29 @@
+.productos__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.galeria__productos__card--taza{
+    background: url(../img/taza.svg);
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.galeria__productos__card__iconos{
+    display: flex;
+    gap: 1rem;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px #00000030;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+.icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

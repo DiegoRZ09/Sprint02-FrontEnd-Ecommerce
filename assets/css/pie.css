@@ -1,0 +1,107 @@
+
+.pie--contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #EAF2FD;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+.pie__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.menu__item:hover{
+    color: #2A7AE4;
+    text-decoration: underline;
+}
+
+.pie__formulario, .pie__formulario__campo, .pie__formulario--area{
+    display: flex;
+    flex-direction: column;
+}
+
+.pie__formulario{
+    width: 50%;
+}
+
+.pie__formulario__titulo{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.pie__formulario--area{
+    gap:1rem;
+}
+
+.pie__formulario__campo{
+    padding: 0.7rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 2px #00000030;
+    font-weight: 300;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.pie__formulario__campo__input{
+    outline:none;
+    border: none;
+    background: #FFFFFF;
+    box-sizing: border-box;
+  
+}
+
+.pie__formulario__campo__label{
+   font-size: 0.75rem;
+   margin-bottom: 0.5rem;
+}
+
+.pie__formulario__boton{
+    padding: 0.5rem;
+    width: 35%;
+    height: 3rem;
+    color:#FFFFFF;
+    background: #2A7AE4;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 2px #00000030;
+}
+
+.pie__formulario__boton:hover{
+    font-size: 1.1rem;
+    border: 1px solid #FFFFFF;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+.pie__datosDev{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    justify-content: center;
+    padding: 1.5rem 10%;
+    gap: 1rem;
+    
+}
+
+.pie__datosDev__img{
+    width:30px;
+}
+
+.pie__datosDev__datos{
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.pie__datosDev__redes{
+    margin-left: 1rem;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
