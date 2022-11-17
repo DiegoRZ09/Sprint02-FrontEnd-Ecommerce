@@ -1,9 +1,29 @@
+.productos{
+    background: #e5e5e5;
+}
+
 .productos__head{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
+
+
+
+
+
+.productos__head__boton--boton{
+    width: 100%;
+    
+   
+    color:#FFFFFF;
+    background: #2A7AE4;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 2px #00000030;
+}
+
 
 .galeria__productos__card--taza{
     background: url(../img/taza.svg);
@@ -12,6 +32,14 @@
     background-size: cover;
 
 }
+
+.galeria__productos--todos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem
+}
+
+
 
 .galeria__productos__card__iconos{
     display: flex;
@@ -26,4 +54,68 @@
 .icon:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media screen and (min-width: 350px){
+    .productos__head__titulo{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .productos__head__boton{
+        width: 50%;
+    }
+
+    .productos__head__boton--boton{
+        font-size: 0.8rem;
+        padding: 0.2rem;
+        height: 2rem;
+    }
+
+    .galeria__productos__card{
+        width: calc((100%/2)-1.5rem);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .productos__head__titulo{
+        font-size: 1.5rem;
+    }
+
+    .productos__head__boton--boton{
+        font-size: 1rem;
+        padding: 0.5rem;
+        height: 3rem;
+    }
+
+    .productos__head__boton{
+        width: 30%;
+    }
+
+    .galeria__productos__card{
+        width: calc((100%/4)-1.5rem);
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .productos__head__titulo{
+        font-size: 2rem;
+    }
+
+    .productos__head__boton{
+        width: 25%;
+    }
+
+    .productos__head__boton--boton:hover{
+        font-size: 1.1rem;
+        border: 1px solid #FFFFFF;
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+    }
+
+    .galeria__productos__card{
+        width: calc((100%/6)-1.5rem);
+    }
 }

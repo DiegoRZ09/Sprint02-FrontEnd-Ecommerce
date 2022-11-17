@@ -17,7 +17,6 @@
 }
 
 .formulario--area{
-    width: 500px;
     gap: 1.2rem;
 }
 
@@ -59,4 +58,16 @@
     background: #2A7AE4;
     border: none;
     border-radius: 6px;
+}
+
+@media screen and (min-width: 350px){
+    .formulario--area{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .formulario--area{
+        width: 500px;
+    }
 }

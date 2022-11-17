@@ -20,19 +20,17 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/productos.css">
     <link rel="stylesheet" href="assets/css/pie.css">
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/formularios.css">
 </head>
 
 <body>
     <header>
         <div class="encabezado container">
-            <div class="encabezado__logo">
-                <a href="index.html"><img class="encabezado__logo__img" src="assets/img/Logo.svg" alt="Logo de Alura Geek"></a>
-                <div class="encabezado__logo__busqueda textos">
-                    <input class="encabezado__logo__busqueda__barra textos" type="text" placeholder="¿Qué estás buscando?">
-                    <div class="encabezado__logo__busqueda__btn">
-                        <i class="fas fa-search icon"></i>
-                      </div>
+            <a href="index.html" class="encabezado__img"><img src="assets/img/Logo.svg" alt="Logo de Alura Geek"></a>
+            <div class="encabezado__busqueda textos">
+                <input class="encabezado__busqueda__barra textos" type="text" placeholder="¿Qué estás buscando?">
+                <div class="encabezado__busqueda__btn">
+                    <i class="fas fa-search icon"></i>
                 </div>
             </div>
         </div>
@@ -55,18 +53,20 @@
         </form>
         
     </main>
-    <footer class="pie">
-        <section class="pie--contenedor container">
+    <footer>
+        <section class="pie container">
             
-            <a href="index.html"><img class="encabezado__logo__img" src="assets/img/Logo.svg" alt="Logo de Alura Geek"></a>
-            <ul class="pie__menu textos">
-                <li class="menu__item"><a href="#">Quienes Somos</a></li>
-                <li class="menu__item"><a href="#">Politica de Privacidad</a></li>
-                <li class="menu__item"><a href="#">Programa de Fidelidad</a></li>
-                <li class="menu__item"><a href="#">Nuestras Tienda</a></li>
-                <li class="menu__item"><a href="#">Quiero una franquicia</a></li>
-                <li class="menu__item"><a href="#">Anunciate aquí</a></li>
-            </ul>
+            <div class="pie__container">
+                <a href="index.html" class="pie__logo"><img  src="assets/img/Logo.svg" alt="Logo Alura Geek"></a>
+                <ul class="pie__menu textos">
+                    <li class="menu__item"><a href="#">Quienes Somos</a></li>
+                    <li class="menu__item"><a href="#">Politica de Privacidad</a></li>
+                    <li class="menu__item"><a href="#">Programa de Fidelidad</a></li>
+                    <li class="menu__item"><a href="#">Nuestras Tienda</a></li>
+                    <li class="menu__item"><a href="#">Quiero una franquicia</a></li>
+                    <li class="menu__item"><a href="#">Anunciate aquí</a></li>
+                </ul>
+            </div>
            
             <form class="pie__formulario">
                 <legend class="pie__formulario__titulo titulos">Hable con nosotros</legend>

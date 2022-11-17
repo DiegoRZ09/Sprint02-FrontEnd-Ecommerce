@@ -1,0 +1,87 @@
+.encabezado__banner{
+    background: linear-gradient(rgba(20,20,20,0.5),rgba(150,150,150,0.2)), url(../img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    color: white;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.encabezado__banner__titulo{
+   
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.79);
+}
+
+.encabezado__banner__texto{
+
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.79);
+}
+
+.boton{
+    background: #2A7AE4;
+    
+    color:#FFFFFF;
+   
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 5px 13px -5px rgba(0,0,0,0.5);
+}
+
+.boton:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 350px){
+
+    .encabezado__banner{
+        height: 200px;
+        padding-bottom: 1rem;
+    }
+
+    .encabezado__banner__titulo{
+        font-size: 1.5rem;
+    }
+
+    .encabezado__banner__texto{
+        font-size: 0.7rem;
+    }
+
+    .boton{
+        padding: 0.75rem 1rem;
+        width: 140px;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+
+    .encabezado__banner{
+        height: 350px;
+        padding-bottom: 2rem;
+    }
+    
+    .encabezado__banner__titulo{
+        font-size: 3.25rem;
+    }
+
+    .encabezado__banner__texto{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .boton{
+        padding: 1rem;
+        width: 160px;
+        font-size: 1rem;
+    }
+}

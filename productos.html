@@ -18,34 +18,32 @@
     <link rel="stylesheet" href="assets/css/bases/reset.css">
     <link rel="stylesheet" href="assets/css/bases/bases.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/productos.css">
     <link rel="stylesheet" href="assets/css/pie.css">
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/formularios.css">
     <link rel="stylesheet" href="assets/css/todos-productos.css">
+    <link rel="stylesheet" href="assets/css/cards-products.css">
 </head>
 
 <body>
     <header>
         <div class="encabezado container">
-            <div class="encabezado__logo">
-                <a href="index.html"><img class="encabezado__logo__img" src="assets/img/Logo.svg" alt="Logo de Alura Geek"></a>
-                <div class="encabezado__logo__busqueda textos">
-                    <input class="encabezado__logo__busqueda__barra textos" type="text" placeholder="¿Qué estás buscando?">
-                    <div class="encabezado__logo__busqueda__btn">
-                        <i class="fas fa-search icon"></i>
-                      </div>
+            <a href="index.html" class="encabezado__img"><img src="assets/img/Logo.svg" alt="Logo de Alura Geek"></a>
+            <div class="encabezado__busqueda textos">
+                <input class="encabezado__busqueda__barra textos" type="text" placeholder="¿Qué estás buscando?">
+                <div class="encabezado__busqueda__btn">
+                    <i class="fas fa-search icon"></i>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container">
+    <main class="container productos">
         
         <div class="productos__head">
-            <h3 class="galeria__head__titulo textos">Todos los productos</h3>
-            <a href="agregar-producto.html"><button class="textos encabezado__boton">Agregar producto</button></a>
+            <h3 class="productos__head__titulo titulos">Todos los productos</h3>
+            <a href="agregar-producto.html" class="productos__head__boton"><button class="productos__head__boton--boton textos">Agregar producto</button></a>
         </div>
-        <div class="galeria__productos">
+        <div class="galeria__productos--todos">
             <div class="galeria__productos__card textos">
                 <div class="galeria__productos__card--taza galeria__productos__card__img">
                     <div class="galeria__productos__card__iconos">
@@ -71,9 +69,9 @@
 
             <div class="galeria__productos__card textos">
                 <img class="galeria__productos__card__img" src="assets/img/yoda.svg" alt="Yoda">
-                <div class="galeria__productos__card__iconos icon">
+                <div class="galeria__productos__card__iconos">
                     <i class="fa-regular fa-trash-can icon"></i>
-                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-pen icon"></i>
                 </div>
                 <h4 class="galeria__productos__card__nombre">Figura Yoda</h4>
                 <p>$ 60.00</p>
@@ -84,7 +82,7 @@
                 <img class="galeria__productos__card__img" src="assets/img/stormtrooper.svg" alt="Figura Stormtrooper">
                 <div class="galeria__productos__card__iconos">
                     <i class="fa-regular fa-trash-can icon"></i>
-                    <i class="fa-solid fa-pen "></i>
+                    <i class="fa-solid fa-pen icon"></i>
                 </div>
                 <h4 class="galeria__productos__card__nombre">Figura Stormtrooper</h4>
                 <p>$ 60.00</p>
@@ -94,7 +92,7 @@
             <div class="galeria__productos__card textos">
                 <img class="galeria__productos__card__img" src="assets/img/grogu.svg" alt="Figura Grogu">
                 <div class="galeria__productos__card__iconos">
-                    <i class="fa-regular fa-trash-can "></i>
+                    <i class="fa-regular fa-trash-can icon"></i>
                     <i class="fa-solid fa-pen icon"></i>
                 </div>
                 <h4 class="galeria__productos__card__nombre">Figura Grogu</h4>
@@ -246,18 +244,20 @@
         
     </main>
 
-    <footer class="pie">
-        <section class="pie--contenedor container">
+    <footer>
+        <section class="pie container">
             
-            <a href="index.html"><img class="encabezado__logo__img" src="assets/img/Logo.svg" alt="Logo de Alura Geek"></a>
-            <ul class="pie__menu textos">
-                <li class="menu__item"><a href="#">Quienes Somos</a></li>
-                <li class="menu__item"><a href="#">Politica de Privacidad</a></li>
-                <li class="menu__item"><a href="#">Programa de Fidelidad</a></li>
-                <li class="menu__item"><a href="#">Nuestras Tienda</a></li>
-                <li class="menu__item"><a href="#">Quiero una franquicia</a></li>
-                <li class="menu__item"><a href="#">Anunciate aquí</a></li>
-            </ul>
+            <div class="pie__container">
+                <a href="index.html" class="pie__logo"><img  src="assets/img/Logo.svg" alt="Logo Alura Geek"></a>
+                <ul class="pie__menu textos">
+                    <li class="menu__item"><a href="#">Quienes Somos</a></li>
+                    <li class="menu__item"><a href="#">Politica de Privacidad</a></li>
+                    <li class="menu__item"><a href="#">Programa de Fidelidad</a></li>
+                    <li class="menu__item"><a href="#">Nuestras Tienda</a></li>
+                    <li class="menu__item"><a href="#">Quiero una franquicia</a></li>
+                    <li class="menu__item"><a href="#">Anunciate aquí</a></li>
+                </ul>
+            </div>
            
             <form class="pie__formulario">
                 <legend class="pie__formulario__titulo titulos">Hable con nosotros</legend>

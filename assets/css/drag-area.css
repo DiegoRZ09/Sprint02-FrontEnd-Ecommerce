@@ -1,0 +1,55 @@
+.formulario__campo__drag{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+.formulario__campo__drag--area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    width: 40%;
+    border: 2px dashed #ddd;
+    text-align: center;
+    
+}
+
+.formulario__campo__drag__btn{
+    background: #2A7AE4;
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    color:#FFFFFF;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 5px 13px -5px rgba(0,0,0,0.5);
+}
+
+.formulario__campo__drag__btn:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 350px){
+    .formulario__campo__drag div , .formulario__campo__drag span{
+        display: none;
+    }
+
+    .formulario__campo__drag__btn{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .formulario__campo__drag div , .formulario__campo__drag span{
+        display: block;
+    }
+
+    .formulario__campo__drag__btn{
+        width: 35%;
+    }
+}

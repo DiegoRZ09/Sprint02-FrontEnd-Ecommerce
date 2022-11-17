@@ -1,7 +1,3 @@
-.container{
-    padding: 1rem 10%;
-}
-
 .titulos{
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -10,4 +6,22 @@
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
     font-size: 1rem;
+}
+
+@media screen and (min-width: 350px){
+    .container{
+        padding: 1rem 2%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        padding: 1rem 5%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        padding: 1rem 10%
+    }
 }
