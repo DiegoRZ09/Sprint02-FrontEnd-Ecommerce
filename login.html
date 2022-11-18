@@ -71,16 +71,36 @@
             <form class="pie__formulario">
                 <legend class="pie__formulario__titulo titulos">Hable con nosotros</legend>
                 <fieldset class="pie__formulario--area textos">
-                    <div class="pie__formulario__campo textos">
-                        <label class="pie__formulario__campo__label"for="nombre">Nombre</label>
-                        <input class="pie__formulario__campo__input textos" id="nombre" type="text" required>
+
+                    <div class="pie__formulario__grupo" id="grupo__nombre">
+                        <div class="pie__formulario__campo textos">
+                            <div class="pie__formulario__campo-label">
+                                <label class="pie__formulario__campo__label"for="nombre">Nombre</label>
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <input class="pie__formulario__campo__input textos" id="nombre" type="text" name="nombre">
+                        </div>
+                        <p class="formulario__input-error">Solo puede contener letras y espacios.</p>
                     </div>
-                    <div class="pie__formulario__campo textos">
-                        <label class="pie__formulario__campo__label"for="mensaje">Mensaje</label>
-                        <textarea class="pie__formulario__campo__input textos" name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
+                    
+                    <div class="pie__formulario__grupo" id="grupo__mensaje">
+                        <div class="pie__formulario__campo textos">
+                            <div class="pie__formulario__campo-label">
+                                <label class="pie__formulario__campo__label"for="mensaje">Mensaje</label>
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <textarea class="pie__formulario__campo__input textos" name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+                        </div>
+                        <p class="formulario__input-error">Máximo 120 caracteres.</p>
                     </div>
-                    <button class="pie__formulario__boton textos">Enviar Mensaje</button>
                 </fieldset>
+                <div class="formulario__mensaje textos">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Llena el formulario correctamente</p>
+                </div>
+                <div class="pie__formulario-boton textos">
+                    <button type="submit" class="pie__formulario__boton textos">Enviar Mensaje</button>
+                    <p class="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+                </div>
             </form>
         </section>
         <section class="pie__datosDev">
@@ -99,5 +119,6 @@
             </div>
         </section>
     </footer>
+    <script src="assets/js/formularios/pie.js"></script>
 </body>
 </html>
