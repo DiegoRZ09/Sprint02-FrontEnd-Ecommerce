@@ -1,6 +1,7 @@
 .formulario, .formulario--area, .formulario__campo{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .formulario{
@@ -20,10 +21,12 @@
     gap: 1.2rem;
 }
 
+
 .formulario__campo{
     padding: 0.7rem;
     background: #FFFFFF;
     gap: 0.5rem;
+
     box-shadow: 0 2px 4px 2px #00000030;
     font-weight: 300;
     box-sizing: border-box;
@@ -46,6 +49,7 @@
     border: none;
     background: #FFFFFF;
     box-sizing: border-box;
+    width: 100%;
     
 }
 
