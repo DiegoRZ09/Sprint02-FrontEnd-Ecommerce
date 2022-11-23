@@ -44,12 +44,12 @@
             <a href="agregar-producto.html" class="productos__head__boton"><button class="productos__head__boton--boton textos">Agregar producto</button></a>
         </div>
         <div class="galeria__productos--todos">
+
             <div class="galeria__productos__card textos">
-                <div class="galeria__productos__card--taza galeria__productos__card__img">
-                    <div class="galeria__productos__card__iconos">
-                        <i class="fa-regular fa-trash-can icon"></i>
-                        <i class="fa-solid fa-pen icon"></i>
-                    </div>
+                <img class="galeria__productos__card__img" src="assets/img/taza.svg" alt="Taza">
+                <div class="galeria__productos__card__iconos">
+                    <i class="fa-regular fa-trash-can icon"></i>
+                    <i class="fa-solid fa-pen icon"></i>
                 </div>
                 <h4 class="galeria__productos__card__nombre">Taza Stormtrooper</h4>
                 <p>$ 60.00</p>
@@ -285,12 +285,12 @@
                         <p class="formulario__input-error">Máximo 120 caracteres.</p>
                     </div>
                 </fieldset>
-                <div class="formulario__mensaje textos">
-                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Llena el formulario correctamente</p>
+                <div class="formulario__mensaje formulario__mensaje-pie textos">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error: </b>Llena el formulario correctamente</p>
                 </div>
                 <div class="pie__formulario-boton textos">
                     <button type="submit" class="pie__formulario__boton textos">Enviar Mensaje</button>
-                    <p class="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+                    <p class="formulario__mensaje-exito-pie">¡Formulario enviado exitosamente!</p>
                 </div>
             </form>
         </section>
@@ -310,6 +310,6 @@
             </div>
         </section>
     </footer>
-    <script src="assets/js/formularios/pie.js"></script>
+    <script type="module" src="assets/js/formularios/pie-formulario.js"></script>
 </body>
 </html>

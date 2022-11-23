@@ -41,41 +41,96 @@
         <form class="formulario container">
             <legend class="formulario__titulo textos">Agregar nuevo producto</legend>
             <fieldset class="formulario--area textos">
-                <div class="formulario__campo">
-                    <label class="formulario__campo__label" for="imagen">Imagen del producto</label>
-                    <div class="formulario__campo__drag">
-                        <div class="formulario__campo__drag--area">
-                            <i class="fa-regular fa-image"></i>
-                            <p>Arrastra para agregar una imagen</p>
-                        </div>
-                        <span>ó</span>
-                        <button class="formulario__campo__drag__btn textos">Selecciona tu archivo</button>
-                        <input class="formulario__campo__input textos" id="imagen" type="file" hidden required>
-                    </div>
-                    
-                </div>
-                <div class="formulario__campo">
-                    <label class="formulario__campo__label" for="categoria">Categoría</label>
-                    <select name="categoria" class="formulario__campo__input textos" id="categoria">
-                        <option value="1">Star Wars</option>
-                        <option value="2">Consolas</option>
-                        <option value="3">Diversos</option>
 
-                    </select>
+                <!-- <div class="formulario__grupo" id="grupo__imagen">
+                    <div class="formulario__campo textos">
+                        <div class="formulario__campo-label">
+                            <label class="formulario__campo__label" for="imagen">Imagen del producto</label>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="formulario__campo__drag">
+                            <div class="formulario__campo__drag--area">
+                                <i class="fa-regular fa-image"></i>
+                                <p>Arrastra para agregar una imagen</p>
+                            </div>
+                            <span>ó</span>
+                            <button class="formulario__campo__drag__btn textos" for="imagen">Selecciona tu archivo</button>
+                            <input class="formulario__campo__input textos" id="imagen" type="file" name="imagen" hidden required>
+                        </div>                    
+                    </div>
+                    <p class="formulario__input-error">Selecciona un archivo.</p>
+                </div> -->
+
+                <div class="formulario__grupo" id="grupo__imagen">
+                    <div class="formulario__campo textos">
+                        <div class="formulario__campo-label">
+                            <label class="formulario__campo__label" for="imagen">Imagen del producto</label>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <input class="formulario__campo__input textos" id="imagen" type="file" name="imagen">
+                  
+                    </div>
+                    <p class="formulario__input-error">Selecciona un archivo.</p>
                 </div>
-                <div class="formulario__campo">
-                    <label class="formulario__campo__label" for="nombre">Nombre del producto</label>
-                    <input class="formulario__campo__input textos" id="nombre" type="text" required>
+
+                <div class="formulario__grupo" id="grupo__categoria">
+                    <div class="formulario__campo textos">
+                        <div class="formulario__campo-label">
+                            <label class="formulario__campo__label" for="categoria">Categoría</label>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <select name="categoria" class="formulario__campo__input textos" id="categoria">
+                            <option value="Star Wars">Star Wars</option>
+                            <option value="Consolas">Consolas</option>
+                            <option value="Diversos">Diversos</option>
+                        </select>
+                    </div>
+                    <p class="formulario__input-error">Selecciona una categoría.</p>
                 </div>
-                <div class="formulario__campo">
-                    <label class="formulario__campo__label" for="precio">Precio del Producto</label>
-                    <input class="formulario__campo__input textos" id="precio" type="number" required>
+
+                <div class="formulario__grupo" id="grupo__nombreProducto">
+                    <div class="formulario__campo textos">
+                        <div class="formulario__campo-label">
+                            <label class="formulario__campo__label" for="nombreProducto">Nombre del producto</label>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <input class="formulario__campo__input textos" id="nombreProducto" type="text" name="nombreProducto">
+                    </div>
+                    <p class="formulario__input-error">Máximo 20 caracteres.</p>
                 </div>
-                <div class="formulario__campo">
-                    <label class="formulario__campo__label" for="descripcion">Descripcion del producto</label>
-                    <textarea class="formulario__campo__input textos" name="" id="descripcion" cols="30" rows="10" required></textarea>
+
+                <div class="formulario__grupo" id="grupo__precio">
+                    <div class="formulario__campo textos">
+                        <div class="formulario__campo-label">
+                            <label class="formulario__campo__label" for="precio">Precio</label>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <input class="formulario__campo__input textos" id="precio" type="text" name="precio" placeholder="00.00">
+                    </div>
+                    <p class="formulario__input-error">Sólo números con 2 puntos decimales.</p>
                 </div>
-                <button class="formulario__boton textos">Agregar Producto</button>
+
+            
+                <div class="formulario__grupo" id="grupo__descripcion">
+                    <div class="formulario__campo textos">
+                        <div class="formulario__campo-label">
+                            <label class="formulario__campo__label" for="descripcion">Descripción</label>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <textarea class="formulario__campo__input textos" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                    </div>
+                    <p class="formulario__input-error">Máximo 150 caracteres.</p>
+                </div>
+
+                <div class="formulario__mensaje textos">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b>Llena el formulario correctamente</p>
+                </div>
+
+                <div class="formulario-boton textos">
+                    <button type="submit" class="formulario__boton textos">Agregar producto</button>
+                    <p class="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+                </div>
+
             </fieldset>
         </form>
         
@@ -122,12 +177,12 @@
                         <p class="formulario__input-error">Máximo 120 caracteres.</p>
                     </div>
                 </fieldset>
-                <div class="formulario__mensaje textos">
+                <div class="formulario__mensaje formulario__mensaje-pie textos">
                     <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b>Llena el formulario correctamente</p>
                 </div>
                 <div class="pie__formulario-boton textos">
                     <button type="submit" class="pie__formulario__boton textos">Enviar Mensaje</button>
-                    <p class="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+                    <p class="formulario__mensaje-exito-pie">¡Formulario enviado exitosamente!</p>
                 </div>
             </form>
         </section>
@@ -147,6 +202,7 @@
             </div>
         </section>
     </footer>
-    <script src="assets/js/formularios/pie.js"></script>
+    <script type="module" src="assets/js/formularios/agregar-formulario.js"></script>
+    <script type="module" src="assets/js/formularios/pie-formulario.js"></script>
 </body>
 </html>

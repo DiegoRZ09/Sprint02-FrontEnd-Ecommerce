@@ -23,10 +23,17 @@
 .formulario__campo{
     padding: 0.7rem;
     background: #FFFFFF;
+    gap: 0.5rem;
     box-shadow: 0 2px 4px 2px #00000030;
     font-weight: 300;
     box-sizing: border-box;
     border-radius: 6px;
+}
+
+.formulario__campo-label{
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .formulario__campo__label{
@@ -42,11 +49,49 @@
     
 }
 
+.formulario__validacion-estado{
+    opacity: 0;
+}
+
+.formulario__input-error{
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.formulario__input-error-activo{
+    display: block;
+}
+
+.formulario__mensaje, .formulario__mensaje2{
+    font-size: 0.75rem;
+    margin: 1rem auto;
+    height: 2rem;
+    width: 90%;
+    line-height: 2rem;
+    text-align: center;
+    background: #F66060;
+    border-radius: 5px;
+    display: none;
+}
+
+.formulario__mensaje-activo, .formulario__mensaje-activo{
+    display: block;
+}
+
 .formulario__boton:hover{
     font-size: 1.3rem;
     border: 1px solid #FFFFFF;
     transition: all 0.3s ease-out;
     cursor: pointer;
+}
+
+.formulario-boton{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    gap: 1rem;
 }
 
 .formulario__boton{
@@ -59,6 +104,36 @@
     border: none;
     border-radius: 6px;
 }
+
+.formulario__mensaje-exito, .formulario__mensaje-exito-pie{
+    color: #119200;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo{
+    display: block;
+}
+
+/*Estilos para validacion*/
+
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #1ed12d;
+    opacity: 1
+}
+
+.formulario__grupo-incorrecto .pie__formulario__campo__label{
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .pie__formulario__campo, .formulario__grupo-incorrecto .formulario__campo {
+    border: 2px solid #bb2929;
+}
+
 
 @media screen and (min-width: 350px){
     .formulario--area{

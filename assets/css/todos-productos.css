@@ -25,14 +25,6 @@
 }
 
 
-.galeria__productos__card--taza{
-    background: url(../img/taza.svg);
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
 .galeria__productos--todos{
     display: flex;
     flex-wrap: wrap;
@@ -49,6 +41,9 @@
     justify-content: flex-end;
     padding-top: 1rem;
     padding-right: 1rem;
+    position: absolute;
+    right: 1px;
+    top:1px
 }
 
 .icon:hover{

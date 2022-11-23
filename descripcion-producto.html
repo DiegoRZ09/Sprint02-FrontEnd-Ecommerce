@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/galeria-productos.css">
     <link rel="stylesheet" href="assets/css/pie.css">
+    <link rel="stylesheet" href="assets/css/formularios.css">
     <link rel="stylesheet" href="assets/css/descripcion.css">
     <link rel="stylesheet" href="assets/css/cards-products.css">
 </head>
@@ -39,7 +40,10 @@
 
     <main class="container">
         <section class="descripcion">
-            <div class="descripcion__imagen"></div>
+            <div class="descripcion__imagen">
+                <img class="descripcion__imagen-img" src="assets/img/taza.svg" alt="taza">
+            </div>
+            
             <div class="descripcion__texto textos">
                 <h2 class="descripcion__texto__titulo titulos">Taza Stormtrooper</h2>
                 <span>$ 60.00</span>
@@ -136,12 +140,12 @@
                         <p class="formulario__input-error">Máximo 120 caracteres.</p>
                     </div>
                 </fieldset>
-                <div class="formulario__mensaje textos">
-                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Llena el formulario correctamente</p>
+                <div class="formulario__mensaje formulario__mensaje-pie textos">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b>Llena el formulario correctamente</p>
                 </div>
                 <div class="pie__formulario-boton textos">
                     <button type="submit" class="pie__formulario__boton textos">Enviar Mensaje</button>
-                    <p class="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+                    <p class="formulario__mensaje-exito-pie">¡Formulario enviado exitosamente!</p>
                 </div>
             </form>
         </section>
@@ -161,6 +165,6 @@
             </div>
         </section>
     </footer>
-    <script src="assets/js/formularios/pie.js"></script>
+    <script type="module" src="assets/js/formularios/pie-formulario.js"></script>
 </body>
 </html>
