@@ -35,7 +35,7 @@
                     <i class="fas fa-search icon"></i>
                 </div>
             </div>
-            <a href="login.html" target="_blank" class="encabezado__boton"><button class="textos encabezado__boton--boton">Login</button></a>
+            <a href="screens/login.html" target="_blank" class="encabezado__boton"><button class="textos encabezado__boton--boton">Login</button></a>
         </div>
         <div class="encabezado__banner container">
             <h2 class="encabezado__banner__titulo titulos">Diciembre de descuentos</h2>
@@ -50,8 +50,8 @@
                 <h3 class="galeria__head__titulo titulos">Star Wars</h3>
                 <a class="galeria__head__enlace textos" href="#">Ver todos &#10140</a>
             </div>
-            <div class="galeria__productos">
-                <div class="galeria__productos__card textos">
+            <div class="galeria__productos" data-starwars>
+                <!-- <div class="galeria__productos__card textos">
                     <img class="galeria__productos__card__img" src="assets/img/taza.svg" alt="Taza Stormtrooper">
                     <h4 class="galeria__productos__card__nombre">Taza Stormtrooper</h4>
                     <p>$ 60.00</p>
@@ -91,7 +91,7 @@
                     <h4 class="galeria__productos__card__nombre">Figura KyloRen</h4>
                     <p>$ 60.00</p>
                     <a class="galeria__productos__card__enlace" href="#">Ver producto</a>
-                </div>
+                </div> -->
                 
             </div>
         </section>
@@ -101,8 +101,8 @@
                 <h3 class="galeria__head__titulo titulos">Consolas</h3>
                 <a class="galeria__head__enlace textos" href="#">Ver todos &#10140</a>
             </div>
-            <div class="galeria__productos">
-                <div class="galeria__productos__card textos">
+            <div class="galeria__productos" data-consolas>
+                <!-- <div class="galeria__productos__card textos">
                     <img class="galeria__productos__card__img" src="assets/img/control.svg" alt="Control Xbox">
                     <h4 class="galeria__productos__card__nombre">Control Xbox</h4>
                     <p>$ 60.00</p>
@@ -142,7 +142,7 @@
                     <h4 class="galeria__productos__card__nombre">Game Boy Color</h4>
                     <p>$ 60.00</p>
                     <a class="galeria__productos__card__enlace" href="#">Ver producto</a>
-                </div>
+                </div> -->
                 
             </div>
         </section>
@@ -152,8 +152,8 @@
                 <h3 class="galeria__head__titulo titulos">Diversos</h3>
                 <a class="galeria__head__enlace textos" href="#">Ver todos &#10140</a>
             </div>
-            <div class="galeria__productos">
-                <div class="galeria__productos__card textos">
+            <div class="galeria__productos" data-diversos>
+                <!-- <div class="galeria__productos__card textos">
                     <img class="galeria__productos__card__img" src="assets/img/playera-atari.svg" alt="Playera Atari">
                     <h4 class="galeria__productos__card__nombre">Playera Atari</h4>
                     <p>$ 60.00</p>
@@ -193,7 +193,7 @@
                     <h4 class="galeria__productos__card__nombre">Botarga Pikachu</h4>
                     <p>$ 60.00</p>
                     <a class="galeria__productos__card__enlace" href="#">Ver producto</a>
-                </div>
+                </div> -->
                 
             </div>
         </section>
@@ -214,7 +214,7 @@
                 </ul>
             </div>
            
-            <form class="pie__formulario">
+            <form class="pie__formulario" data-pie>
                 <legend class="pie__formulario__titulo titulos">Hable con nosotros</legend>
                 <fieldset class="pie__formulario--area textos">
 
@@ -224,7 +224,7 @@
                                 <label class="pie__formulario__campo__label"for="nombre">Nombre</label>
                                 <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                             </div>
-                            <input class="pie__formulario__campo__input textos" id="nombre" type="text" name="nombre">
+                            <input class="pie__formulario__campo__input textos" id="nombre" type="text" name="nombre" data-nombreCliente>
                         </div>
                         <p class="formulario__input-error">Solo puede contener letras y espacios.</p>
                     </div>
@@ -235,7 +235,7 @@
                                 <label class="pie__formulario__campo__label"for="mensaje">Mensaje</label>
                                 <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                             </div>
-                            <textarea class="pie__formulario__campo__input textos" name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+                            <textarea class="pie__formulario__campo__input textos" name="mensaje" id="mensaje" cols="30" rows="5" data-mensaje></textarea>
                         </div>
                         <p class="formulario__input-error">Máximo 120 caracteres.</p>
                     </div>
@@ -265,6 +265,8 @@
             </div>
         </section>
     </footer>
+    <script type="module" src="assets/js/controllers/formularioPie-controller.js"></script>
+    <script type="module" src="assets/js/controllers/categorias-controller.js"></script>
     <script type="module" src="assets/js/formularios/pie-formulario.js"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "sprint04-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoRZ09/Sprint02-FrontEnd-Ecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoRZ09/Sprint02-FrontEnd-Ecommerce/issues"
+  },
+  "homepage": "https://github.com/DiegoRZ09/Sprint02-FrontEnd-Ecommerce#readme"
+}

@@ -1,0 +1,165 @@
+{
+  "producto": [
+    {
+      "imagen": "../assets/img/taza.svg",
+      "categoria": "Star Wars",
+      "nombreProducto": "Taza Stormptrooper",
+      "precio": "150.00",
+      "descripcion": "Taza del soldado Stormtrooper de la saga Star Wars.",
+      "id": 1
+    },
+    {
+      "imagen": "../assets/img/cabezas.svg",
+      "categoria": "Star Wars",
+      "nombreProducto": "Cabezas de Lego",
+      "precio": "1000.00",
+      "descripcion": "Escultura hecha de Lego de los personajes mas icónicos de Star Wars.",
+      "id": 2
+    },
+    {
+      "imagen": "../assets/img/control.svg",
+      "categoria": "Consolas",
+      "nombreProducto": "Control Xbox",
+      "precio": "1100.00",
+      "descripcion": "Control para Xbox One y Xbox Series.",
+      "id": 3
+    },
+    {
+      "imagen": "../assets/img/yoda.svg",
+      "categoria": "Star Wars",
+      "nombreProducto": "FIgura de Yoda",
+      "precio": "450.00",
+      "descripcion": "Figura a escala del Maestro Yoda",
+      "id": 4
+    },
+    {
+      "imagen": "../assets/img/stormtrooper.svg",
+      "categoria": "Star Wars",
+      "nombreProducto": "Figura Stormtrooper",
+      "precio": "550.00",
+      "descripcion": "Figura del soldado \"Stormtrooper\".",
+      "id": 5
+    },
+    {
+      "imagen": "../assets/img/grogu.svg",
+      "categoria": "Star Wars",
+      "nombreProducto": "Figura Grogu",
+      "precio": "750.00",
+      "descripcion": "Figura con movimiento de Grogu, o mejor conocido como \"Bebe Yoda\", visto en la serie The Mandalorian de Disney+.",
+      "id": 6
+    },
+    {
+      "imagen": "../assets/img/kylo.svg",
+      "categoria": "Star Wars",
+      "nombreProducto": "Figura de Kylo Ren",
+      "precio": "800.00",
+      "descripcion": "Figura del nuevo villano de Star Wars.",
+      "id": 7
+    },
+    {
+      "imagen": "../assets/img/playstation.svg",
+      "categoria": "Consolas",
+      "nombreProducto": "Play Station 5",
+      "precio": "14000.00",
+      "descripcion": "Consola de nueva generación de Sony. Incluye 1 control.",
+      "id": 8
+    },
+    {
+      "imagen": "../assets/img/nes.svg",
+      "categoria": "Consolas",
+      "nombreProducto": "Consola NES",
+      "precio": "4500.00",
+      "descripcion": "La antigua consola de Nintendo, lista para disfrutar de grandes clásicos.",
+      "id": 9
+    },
+    {
+      "imagen": "../assets/img/playera-atari.svg",
+      "categoria": "Diversos",
+      "nombreProducto": "Playera Atari",
+      "precio": "200.00",
+      "descripcion": "Playera con el logo de Atari, todas las tallas disponibles.",
+      "id": 10
+    },
+    {
+      "imagen": "../assets/img/playera-snes.svg",
+      "categoria": "Diversos",
+      "nombreProducto": "Playera NES",
+      "precio": "200.00",
+      "descripcion": "Playera con el control de la consola NES estampado. Todas las tallas disponibles.",
+      "id": 11
+    },
+    {
+      "imagen": "../assets/img/joycon.svg",
+      "categoria": "Consolas",
+      "nombreProducto": "Joy Con",
+      "precio": "800.00",
+      "descripcion": "Los controladores inalámbricos para Nintendo Switch.",
+      "id": 12
+    },
+    {
+      "imagen": "../assets/img/xbox.svg",
+      "categoria": "Consolas",
+      "nombreProducto": "Xbox Series X",
+      "precio": "13000.00",
+      "descripcion": "La nueva consola de nueva generación de Microsoft, incluye 1 control.",
+      "id": 13
+    },
+    {
+      "imagen": "../assets/img/gameboy.svg",
+      "categoria": "Consolas",
+      "nombreProducto": "GameBoy Color",
+      "precio": "3000.00",
+      "descripcion": "La clásica consola portátil de Nintendo, disfruta de juegos como Pókemon o Mario Bros.",
+      "id": 14
+    },
+    {
+      "imagen": "../assets/img/sonic.svg",
+      "categoria": "Diversos",
+      "nombreProducto": "Figura Sonic",
+      "precio": "250.00",
+      "descripcion": "Figura de 10 cm del erizo favorito de todos.",
+      "id": 15
+    },
+    {
+      "imagen": "../assets/img/despertador.svg",
+      "categoria": "Diversos",
+      "nombreProducto": "Reloj Despertador",
+      "precio": "400.00",
+      "descripcion": "Genial reloj-despertador con toda la vibra de los años 80's.",
+      "id": 16
+    },
+    {
+      "imagen": "../assets/img/vr.svg",
+      "categoria": "Diversos",
+      "nombreProducto": "Visor VR",
+      "precio": "3500.00",
+      "descripcion": "Lleva tus juegos a otro nivel de inmersión gracias a éste accesorio, los juegos deben ser compatibles con el sistema.",
+      "id": 17
+    },
+    {
+      "imagen": "../assets/img/pikachu.svg",
+      "categoria": "Diversos",
+      "nombreProducto": "Botarga Pikachu",
+      "precio": "5000.00",
+      "descripcion": "Piii kaaa Chuuuuuuu!",
+      "id": 18
+    }
+  ],
+  "mensajes": [
+    {
+      "nombre": "Diego Reyes",
+      "mensaje": "Siempre un gusto comprar con ustedes.",
+      "id": 1
+    },
+    {
+      "nombre": "Brenda",
+      "mensaje": "Gran tienda, con gran surtido.",
+      "id": 2
+    },
+    {
+      "nombre": "Gerardo",
+      "mensaje": "Simplemente genial.",
+      "id": 3
+    }
+  ]
+}

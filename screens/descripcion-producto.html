@@ -15,20 +15,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">    
     <title>Alura Geek | Descripcion</title>
-    <link rel="stylesheet" href="assets/css/bases/reset.css">
-    <link rel="stylesheet" href="assets/css/bases/bases.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/galeria-productos.css">
-    <link rel="stylesheet" href="assets/css/pie.css">
-    <link rel="stylesheet" href="assets/css/formularios.css">
-    <link rel="stylesheet" href="assets/css/descripcion.css">
-    <link rel="stylesheet" href="assets/css/cards-products.css">
+    <link rel="stylesheet" href="../assets/css/bases/reset.css">
+    <link rel="stylesheet" href="../assets/css/bases/bases.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/galeria-productos.css">
+    <link rel="stylesheet" href="../assets/css/pie.css">
+    <link rel="stylesheet" href="../assets/css/formularios.css">
+    <link rel="stylesheet" href="../assets/css/descripcion.css">
+    <link rel="stylesheet" href="../assets/css/cards-products.css">
 </head>
 
 <body>
     <header>
         <div class="encabezado container">
-            <a href="index.html" class="encabezado__img"><img src="assets/img/Logo.svg" alt="Logo de Alura Geek"></a>
+            <a href="../index.html" class="encabezado__img"><img src="../assets/img/Logo.svg" alt="Logo de Alura Geek"></a>
             <div class="encabezado__busqueda textos">
                 <input class="encabezado__busqueda__barra textos" type="text" placeholder="¿Qué estás buscando?">
                 <div class="encabezado__busqueda__btn">
@@ -40,7 +40,7 @@
 
     <main class="container">
         <section class="descripcion">
-            <div class="descripcion__imagen">
+            <!-- <div class="descripcion__imagen">
                 <img class="descripcion__imagen-img" src="assets/img/taza.svg" alt="taza">
             </div>
             
@@ -48,12 +48,12 @@
                 <h2 class="descripcion__texto__titulo titulos">Taza Stormtrooper</h2>
                 <span>$ 60.00</span>
                 <p class="descripcion__texto__parrafos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ut eos velit quos quo consequatur et consequuntur minima cupiditate vel aliquid laboriosam sit tenetur, labore minus nam tempora perferendis dolore.</p>
-            </div>
+            </div> -->
         </section>
         <section class="similares">
             <div class="similares__titulo"><h2 class="titulos galeria__head__titulo">Productos Similares</h2></div>
             <div class="galeria__productos">
-                <div class="galeria__productos__card textos">
+                <!-- <div class="galeria__productos__card textos">
                     <img class="galeria__productos__card__img" src="assets/img/taza.svg" alt="Taza Stormtrooper">
                     <h4 class="galeria__productos__card__nombre">Taza Stormtrooper</h4>
                     <p>$ 60.00</p>
@@ -93,7 +93,7 @@
                     <h4 class="galeria__productos__card__nombre">Figura KyloRen</h4>
                     <p>$ 60.00</p>
                     <a class="galeria__productos__card__enlace" href="#">Ver producto</a>
-                </div>
+                </div> -->
                 
             </div>
         </section>
@@ -103,7 +103,7 @@
         <section class="pie container">
             
             <div class="pie__container">
-                <a href="index.html" class="pie__logo"><img  src="assets/img/Logo.svg" alt="Logo Alura Geek"></a>
+                <a href="../index.html" class="pie__logo"><img  src="../assets/img/Logo.svg" alt="Logo Alura Geek"></a>
                 <ul class="pie__menu textos">
                     <li class="menu__item"><a href="#">Quienes Somos</a></li>
                     <li class="menu__item"><a href="#">Politica de Privacidad</a></li>
@@ -114,7 +114,7 @@
                 </ul>
             </div>
            
-            <form class="pie__formulario">
+            <form class="pie__formulario" data-pie>
                 <legend class="pie__formulario__titulo titulos">Hable con nosotros</legend>
                 <fieldset class="pie__formulario--area textos">
 
@@ -124,7 +124,7 @@
                                 <label class="pie__formulario__campo__label"for="nombre">Nombre</label>
                                 <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                             </div>
-                            <input class="pie__formulario__campo__input textos" id="nombre" type="text" name="nombre">
+                            <input class="pie__formulario__campo__input textos" id="nombre" type="text" name="nombre" data-nombreCliente>
                         </div>
                         <p class="formulario__input-error">Solo puede contener letras y espacios.</p>
                     </div>
@@ -135,7 +135,7 @@
                                 <label class="pie__formulario__campo__label"for="mensaje">Mensaje</label>
                                 <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                             </div>
-                            <textarea class="pie__formulario__campo__input textos" name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+                            <textarea class="pie__formulario__campo__input textos" name="mensaje" id="mensaje" cols="30" rows="5" data-mensaje></textarea>
                         </div>
                         <p class="formulario__input-error">Máximo 120 caracteres.</p>
                     </div>
@@ -150,7 +150,7 @@
             </form>
         </section>
         <section class="pie__datosDev">
-            <a href="https://diegorz09.github.io/FrontEnd-Sprint01-Portafolio/" target="_blank"><img class="pie__datosDev__img" src="assets/img/logo-diego.png" alt="Logo del desarrollador"></a>
+            <a href="https://diegorz09.github.io/FrontEnd-Sprint01-Portafolio/" target="_blank"><img class="pie__datosDev__img" src="../assets/img/logo-diego.png" alt="Logo del desarrollador"></a>
             <div class="textos pie__datosDev__datos">
                 <div>
                     <p>Desarrollado por Diego Reyes Zárate</p>
@@ -158,13 +158,15 @@
                 </div>
                 <nav>
                     <ul class="pie__datosDev__redes">
-                        <li><a href="https://github.com/DiegoRZ09" target="_blank"><img src="assets/img/git.png" alt="Icono Github"></a></li>
-                        <li><a href="https://www.linkedin.com/in/diego-rz/" target="_blank"><img src="assets/img/linkedin.png" alt="Icono LinkedIn"></a></li>
+                        <li><a href="https://github.com/DiegoRZ09" target="_blank"><img src="../assets/img/git.png" alt="Icono Github"></a></li>
+                        <li><a href="https://www.linkedin.com/in/diego-rz/" target="_blank"><img src="../assets/img/linkedin.png" alt="Icono LinkedIn"></a></li>
                     </ul>
                 </nav>
             </div>
         </section>
     </footer>
-    <script type="module" src="assets/js/formularios/pie-formulario.js"></script>
+    <script type="module" src="../assets/js/controllers/descripcionProducto-controller.js"></script>
+    <script type="module" src="../assets/js/formularios/pie-formulario.js"></script>
+    <script type="module" src="../assets/js/controllers/formularioPie-controller.js"></script>
 </body>
 </html>

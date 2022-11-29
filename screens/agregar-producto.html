@@ -15,17 +15,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">    
     <title>Alura Geek | Agregar Producto</title>
-    <link rel="stylesheet" href="assets/css/bases/reset.css">
-    <link rel="stylesheet" href="assets/css/bases/bases.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/pie.css">
-    <link rel="stylesheet" href="assets/css/formularios.css">
+    <link rel="stylesheet" href="../assets/css/bases/reset.css">
+    <link rel="stylesheet" href="../assets/css/bases/bases.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/pie.css">
+    <link rel="stylesheet" href="../assets/css/formularios.css">
 </head>
 
 <body>
     <header>
         <div class="encabezado container">
-            <a href="index.html" class="encabezado__img"><img src="assets/img/Logo.svg" alt="Logo de Alura Geek"></a>
+            <a href="../index.html" class="encabezado__img"><img src="../assets/img/Logo.svg" alt="Logo de Alura Geek"></a>
             <div class="encabezado__busqueda textos">
                 <input class="encabezado__busqueda__barra textos" type="text" placeholder="¿Qué estás buscando?">
                 <div class="encabezado__busqueda__btn">
@@ -37,10 +37,11 @@
     </header>
 
     <main>
-        <form class="formulario container">
+        <form class="formulario container" data-formulario>
             <legend class="formulario__titulo textos">Agregar nuevo producto</legend>
             <fieldset class="formulario--area textos">
 
+                <!-- Dropzone -->
                 <!-- <div class="formulario__grupo" id="grupo__imagen">
                     <div class="formulario__campo textos">
                         <div class="formulario__campo-label">
@@ -63,10 +64,10 @@
                 <div class="formulario__grupo" id="grupo__imagen">
                     <div class="formulario__campo textos">
                         <div class="formulario__campo-label">
-                            <label class="formulario__campo__label" for="imagen">Imagen del producto</label>
+                            <label class="formulario__campo__label" for="imagen">URL de la imagen</label>
                             <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                         </div>
-                        <input class="formulario__campo__input textos" id="imagen" type="file" name="imagen">
+                        <input class="formulario__campo__input textos" id="imagen" type="text" name="imagen" data-imagen>
                   
                     </div>
                     <p class="formulario__input-error">Selecciona un archivo.</p>
@@ -78,7 +79,7 @@
                             <label class="formulario__campo__label" for="categoria">Categoría</label>
                             <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                         </div>
-                        <select name="categoria" class="formulario__campo__input textos" id="categoria">
+                        <select name="categoria" class="formulario__campo__input textos" id="categoria" data-categoria>
                             <option value="Star Wars">Star Wars</option>
                             <option value="Consolas">Consolas</option>
                             <option value="Diversos">Diversos</option>
@@ -93,7 +94,7 @@
                             <label class="formulario__campo__label" for="nombreProducto">Nombre del producto</label>
                             <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                         </div>
-                        <input class="formulario__campo__input textos" id="nombreProducto" type="text" name="nombreProducto">
+                        <input class="formulario__campo__input textos" id="nombreProducto" type="text" name="nombreProducto" data-nombre>
                     </div>
                     <p class="formulario__input-error">Máximo 20 caracteres.</p>
                 </div>
@@ -104,7 +105,7 @@
                             <label class="formulario__campo__label" for="precio">Precio</label>
                             <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                         </div>
-                        <input class="formulario__campo__input textos" id="precio" type="text" name="precio" placeholder="00.00">
+                        <input class="formulario__campo__input textos" id="precio" type="text" name="precio" placeholder="00.00" data-precio>
                     </div>
                     <p class="formulario__input-error">Sólo números con 2 puntos decimales.</p>
                 </div>
@@ -116,7 +117,7 @@
                             <label class="formulario__campo__label" for="descripcion">Descripción</label>
                             <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                         </div>
-                        <textarea class="formulario__campo__input textos" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                        <textarea class="formulario__campo__input textos" name="descripcion" id="descripcion" cols="30" rows="10" data-descripcion></textarea>
                     </div>
                     <p class="formulario__input-error">Máximo 150 caracteres.</p>
                 </div>
@@ -142,7 +143,7 @@
         <section class="pie container">
             
             <div class="pie__container">
-                <a href="index.html" class="pie__logo"><img  src="assets/img/Logo.svg" alt="Logo Alura Geek"></a>
+                <a href="../index.html" class="pie__logo"><img  src="../assets/img/Logo.svg" alt="Logo Alura Geek"></a>
                 <ul class="pie__menu textos">
                     <li class="menu__item"><a href="#">Quienes Somos</a></li>
                     <li class="menu__item"><a href="#">Politica de Privacidad</a></li>
@@ -153,7 +154,7 @@
                 </ul>
             </div>
            
-            <form class="pie__formulario">
+            <form class="pie__formulario" data-pie>
                 <legend class="pie__formulario__titulo titulos">Hable con nosotros</legend>
                 <fieldset class="pie__formulario--area textos">
 
@@ -163,7 +164,7 @@
                                 <label class="pie__formulario__campo__label"for="nombre">Nombre</label>
                                 <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                             </div>
-                            <input class="pie__formulario__campo__input textos" id="nombre" type="text" name="nombre">
+                            <input class="pie__formulario__campo__input textos" id="nombre" type="text" name="nombre" data-nombreCliente>
                         </div>
                         <p class="formulario__input-error">Solo puede contener letras y espacios.</p>
                     </div>
@@ -174,7 +175,7 @@
                                 <label class="pie__formulario__campo__label"for="mensaje">Mensaje</label>
                                 <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                             </div>
-                            <textarea class="pie__formulario__campo__input textos" name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+                            <textarea class="pie__formulario__campo__input textos" name="mensaje" id="mensaje" cols="30" rows="5" data-mensaje></textarea>
                         </div>
                         <p class="formulario__input-error">Máximo 120 caracteres.</p>
                     </div>
@@ -189,7 +190,7 @@
             </form>
         </section>
         <section class="pie__datosDev">
-            <a href="https://diegorz09.github.io/FrontEnd-Sprint01-Portafolio/" target="_blank"><img class="pie__datosDev__img" src="assets/img/logo-diego.png" alt="Logo del desarrollador"></a>
+            <a href="https://diegorz09.github.io/FrontEnd-Sprint01-Portafolio/" target="_blank"><img class="pie__datosDev__img" src="../assets/img/logo-diego.png" alt="Logo del desarrollador"></a>
             <div class="textos pie__datosDev__datos">
                 <div>
                     <p>Desarrollado por Diego Reyes Zárate</p>
@@ -197,14 +198,16 @@
                 </div>
                 <nav>
                     <ul class="pie__datosDev__redes">
-                        <li><a href="https://github.com/DiegoRZ09" target="_blank"><img src="assets/img/git.png" alt="Icono Github"></a></li>
-                        <li><a href="https://www.linkedin.com/in/diego-rz/" target="_blank"><img src="assets/img/linkedin.png" alt="Icono LinkedIn"></a></li>
+                        <li><a href="https://github.com/DiegoRZ09" target="_blank"><img src="../assets/img/git.png" alt="Icono Github"></a></li>
+                        <li><a href="https://www.linkedin.com/in/diego-rz/" target="_blank"><img src="../assets/img/linkedin.png" alt="Icono LinkedIn"></a></li>
                     </ul>
                 </nav>
             </div>
         </section>
     </footer>
-    <script type="module" src="assets/js/formularios/agregar-formulario.js"></script>
-    <script type="module" src="assets/js/formularios/pie-formulario.js"></script>
+    <script type="module" src="../assets/js/controllers/registrarProducto-controller.js"></script>
+    <script type="module" src="../assets/js/formularios/agregar-formulario.js"></script>
+    <script type="module" src="../assets/js/formularios/pie-formulario.js"></script>
+    <script type="module" src="../assets/js/controllers/formularioPie-controller.js"></script>
 </body>
 </html>
